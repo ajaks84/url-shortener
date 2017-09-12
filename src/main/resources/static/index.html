@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css"/>
+        <title>Counter Project</title>
+    </head>
+    <body>
+        <header class = "text-center" id = "SMPGR">
+            <nav id = "header-nav" class="navbar navbar-default">
+                <div id = "SMPGR">Counter Project Grodno</div>
+            </nav>
+        </header>
+        <h1></h1>
+        
+        <div class = "container">
+            
+            <ui-view>
+            <div class="text-center report">
+                <h2>Loading Site...</h2>
+            </div>
+            </ui-view>
+        </div>
+        <!-- Libraries -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-date/dist/date.js"></script>
+        <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <!-- Modules -->
+        <script src="src/modules/menuapp/menuapp.module.js"></script>
+        <script src="src/modules/data/data.module.js"></script>
+        <script src="src/modules/authentification/auth.module.js"></script>
+        <!-- Routes -->
+        <script src="src/routes.js"></script>
+        <!-- 'MenuApp' module components -->
+        <script src="src/components/lines.component.js"></script>
+        <script src="src/components/shift.button.component.js"></script>
+        <script src="src/components/shifts.component.js"></script>
+        <script src="src/components/countries.component.js"></script>
+        <script src="src/components/factories.component.js"></script>
+        <script src="src/components/consumption.component.js"></script>
+        <!-- 'MenuApp' module controllers -->
+        <script src="src/controllers/country.controller.js"></script>
+        <script src="src/controllers/factory.controller.js"></script>
+        <script src="src/controllers/choise.controller.js"></script>
+        <script src="src/controllers/lines.controller.js"></script>
+        <script src="src/controllers/report.controller.js"></script>
+        <script src="src/controllers/edit.report.controller.js"></script>
+        <script src="src/controllers/consumption.controller.js"></script>
+        <script src="src/controllers/editor.controller.js"></script>
+        <!-- 'Data' module artifacts -->
+        <script src="src/services/data.service.js"></script>
+        <!-- <script src="src/services/auth.service.js"></script> -->
+
+        <!-- 'Auth' module components -->
+        <script src="src/modules/authentification/services/auth.service.js"></script>
+        <script src="src/modules/authentification/controllers/login.controller.js"></script>
+    </body>
+</html>
